@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List Books</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td><b>id</b></td>
+        <td><b>subject</b></td>
+        <td><b>title</b></td>
+        <td><b>author</b></td>
+        <td><b>publisher</b></td>
+        <td><b>copyright</b></td>
+        <td><b>edition</b></td>
+        <td><b>pages</b></td>
+        <td><b>ISBN</b></td>
+        <td><b>shelfNo</b></td>
+        <td><b>status</b></td>
+
+    </tr>
+    </thead>
+    <tr th:each="listValue : ${books}">
+        <td th:text="${listValue.id}"></td>
+        <td th:text="${listValue.subject}"></td>
+        <td th:text="${listValue.title}"></td>
+        <td th:text="${listValue.author}"></td>
+        <td th:text="${listValue.publisher}"></td>
+        <td th:text="${listValue.copyright}"></td>
+        <td th:text="${listValue.edition}"></td>
+        <td th:text="${listValue.pages}"></td>
+        <td th:text="${listValue.ISBN}"></td>
+        <td th:text="${listValue.shelfNo}"></td>
+        <td th:text="${listValue.isStatus()}"></td>
+
+    </tr>
+</table>
+</body>
+</html>

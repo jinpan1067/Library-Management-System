@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Library system</title>
+</head>
+<body>
+<form  action="/searchBook" method="GET">
+  <p>BOOK INFORMATION</p>
+  <div>
+    <label for="theTitle1">Title:</label>
+    <input name="search" id="theTitle1" value="">
+  </div>
+  <div>
+    <button>Search for book by title</button>
+  </div>
+</form>
+
+
+<form  action="/addBook" method="GET">
+
+  <P>Add a new book:</p>
+  <div>
+    <label for="theSubject">Book Subject:</label>
+    <input name="subject" id="theSubject" value="">
+  </div>
+  <div>
+    <label for="theTitle">Book Title:</label>
+    <input name="title" id="theTitle" value="" >
+  </div>
+  <div>
+    <label for="theAuthor">Book Author:</label>
+    <input  name="author" id="theAuthor" value="" >
+  </div>
+  <div>
+    <label for="thePublisher">Book Publisher:</label>
+    <input  name="publisher" id="thePublisher" value="" >
+  </div>
+  <div>
+    <label for="theCopyright">Copyright Book</label>
+    <input name="copyright" id="theCopyright" value="" >
+  </div>
+  <div>
+    <label for="theEdition">Edition Number:</label>
+    <input name="edition" id="theEdition" value="" >
+  </div>
+  <div>
+    <label for="thePages">Number of Pages:</label>
+    <input  name="pages" id="thePages" value="" >
+  </div>
+  <div>
+    <label for="theISBN">ISBN Book:</label>
+    <input  name="ISBN" id="theISBN" value="" >
+  </div>
+  <div>
+    <label for="theShelfNo">Shelf No:</label>
+    <input  name="shelfNo" id="theShelfNo" value="" >
+  </div>
+  <div>
+    <button>Add all the information</button>
+  </div>
+</form>
+<form action="/issueBooks" method="GET">
+  <p>Issue Books</p>
+
+  <div>
+    <label for="theMemberID">Member ID:</label>
+    <input name="memberId" id="theMemberID" value="">
+  </div>
+  <div>
+    <label for="theBookID">Book ID:</label>
+    <input name="bookID" id="theBookID" value="">
+  </div>
+
+  <div>
+    <label for="theReturnDate">Return Date:</label>
+    <input name="returnDate" id="theReturnDate" value="">
+  </div>
+  <br>
+  <div>
+    <button>issue book</button>
+  </div>
+</form>
+
+
+<form action="/returnBooks" method="GET">
+  <p>Return Books</p>
+
+  <div>
+    <label for="theMemberID1">Enter Member ID:</label>
+    <input name="returnMemberId" id="theMemberID1" value="">
+  </div>
+  <div>
+    <label for="theBookID1">Enter Book ID:</label>
+    <input name="returnBookID" id="theBookID1" value="">
+  </div>
+
+  <br>
+  <div>
+    <button>return book</button>
+  </div>
+</form>
+</body>
+</html>

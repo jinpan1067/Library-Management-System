@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form  action="/searchMember" method="GET">
+  <p>MEMBER INFORMATION</p>
+  <div>
+    <label for="theMemberId">Member ID:</label>
+    <input name="searchId" id="theMemberId" value="">
+  </div>
+  <div>
+    <button>Search for Member by ID</button>
+  </div>
+</form>
+
+
+<form action="/addMember" method="GET">
+
+  <P>Add a new member:</p>
+  <div>
+    <label for="theMember">Member ID:</label>
+    <input name="memberID" id="theMember" value="">
+  </div><br>
+  <div>
+    <label for="theName">Member Name:</label>
+    <input  name="name" id="theName" value="" >
+  </div><br>
+
+  <div>
+    <label for="thePassword">Password:</label>
+    <input  name="password" id="thePassword" value="" >
+  </div><br>
+
+
+  <div>
+    <label for="reTypePassword">Re-Type password:</label>
+    <input  name="RetypePassword" id="reTypePassword" value="" >
+  </div><br>
+
+  <div>
+    <label for="phoneNumber">Phone Number:</label>
+    <input  name="phoneNumber" id="phoneNumber" value="" >
+  </div><br>
+
+  <div>
+    <label for="theEmail">Member email:</label>
+    <input  name="email" id="theEmail" value="" >
+  </div><br>
+
+  <div>
+    <button>Add all the information</button>
+  </div>
+</form>
+
+
+</body>
+</html>
